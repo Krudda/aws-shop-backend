@@ -20,10 +20,10 @@ export interface Movie {
     imdbVotes: string,
     imdbID: string,
     Type: string,
-    DVD: string,
-    BoxOffice: string,
-    Production: string,
-    Website: string,
+    DVD?: string,
+    BoxOffice?: string,
+    Production?: string,
+    Website?: string,
     totalSeasons?: string,
     Response: string
 }
