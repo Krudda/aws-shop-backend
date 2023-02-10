@@ -1,0 +1,20 @@
+{
+  "name": "aws-shop-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krudda/aws-shop-backend.git"
+  },
+  "keywords": [],
+  "author": "Dmitrii Kruglov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Krudda/aws-shop-backend/issues"
+  },
+  "homepage": "https://github.com/Krudda/aws-shop-backend#readme"
+}
