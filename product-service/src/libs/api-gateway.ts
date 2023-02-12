@@ -19,11 +19,12 @@ export const formatJSONResponse = (response: Record<string, unknown>) => {
 }
 
 export const error404Response = (message: string) => errorResponseBuilder(404, message);
-export const error500Response = (message: string) => errorResponseBuilder(500, message);
+export const error500Response = (message?: string) => errorResponseBuilder(500, message);
 
-const errorResponseBuilder = (statusCode: number, message: string) => {
+const errorResponseBuilder = (statusCode: number, message?: string) => {
+  const defaultMessage = 'Something went wrong'
   return {
     statusCode,
-    body: JSON.stringify({ error: message })
+    body: JSON.stringify({ error: message || defaultMessage })
   }
 }

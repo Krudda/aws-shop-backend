@@ -7,7 +7,7 @@ const getMoviesList = async () => {
     const movies = getAllMoviesService();
     return formatJSONResponse({ body: movies });
   } catch (error) {
-    return error500Response("Something went wrong");
+    return error500Response();
   }
 };
 
