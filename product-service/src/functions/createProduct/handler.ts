@@ -1,8 +1,9 @@
 import { error500Response, formatJSONResponse } from '@libs/api-gateway';
 import { middyfy } from '@libs/lambda';
 import { getAllMoviesService } from '@products/productHandlers';
+import { APIGatewayProxyResult } from 'aws-lambda';
 
-const getMoviesList = async () => {
+const createProduct = async (): Promise<APIGatewayProxyResult> => {
   try {
     const movies = await getAllMoviesService();
     return formatJSONResponse({ body: movies });
@@ -11,4 +12,4 @@ const getMoviesList = async () => {
   }
 }
 
-export const main = middyfy(getMoviesList);
+export const main = middyfy(createProduct);
