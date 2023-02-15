@@ -12,8 +12,7 @@ export const movies: Movie[] = [
         "country": "South Korea",
         "poster": "https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_SX300.jpg",
         "imdbRating": "8.5",
-        "imdbID": "tt6751668",
-        "count": 1
+        "imdbID": "tt6751668"
     },
     {
         "title": "Joker",
@@ -26,8 +25,7 @@ export const movies: Movie[] = [
         "country": "United States, Canada",
         "poster": "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
         "imdbRating": "8.4",
-        "imdbID": "tt7286456",
-        "count": 1
+        "imdbID": "tt7286456"
     },
     {
         "title": "Money Heist",
@@ -40,8 +38,7 @@ export const movies: Movie[] = [
         "country": "Spain",
         "poster": "https://m.media-amazon.com/images/M/MV5BODI0ZTljYTMtODQ1NC00NmI0LTk1YWUtN2FlNDM1MDExMDlhXkEyXkFqcGdeQXVyMTM0NTUzNDIy._V1_SX300.jpg",
         "imdbRating": "8.2",
-        "imdbID": "tt6468322",
-        "count": 1
+        "imdbID": "tt6468322"
     },
     {
         "title": "The Platform",
@@ -54,8 +51,7 @@ export const movies: Movie[] = [
         "country": "Spain",
         "poster": "https://m.media-amazon.com/images/M/MV5BMzllNmRjYWItNjlhNS00MjcyLWIyODEtMTg0ZjBiNTNhNzQwXkEyXkFqcGdeQXVyMTAyOTE2ODg0._V1_SX300.jpg",
         "imdbRating": "7.0",
-        "imdbID": "tt8228288",
-        "count": 1
+        "imdbID": "tt8228288"
     },
     {
         "title": "1917",
@@ -68,8 +64,7 @@ export const movies: Movie[] = [
         "country": "United Kingdom, United States, India, Spain",
         "poster": "https://m.media-amazon.com/images/M/MV5BOTdmNTFjNDEtNzg0My00ZjkxLTg1ZDAtZTdkMDc2ZmFiNWQ1XkEyXkFqcGdeQXVyNTAzNzgwNTg@._V1_SX300.jpg",
         "imdbRating": "8.2",
-        "imdbID": "tt8579674",
-        "count": 1
+        "imdbID": "tt8579674"
     },
     {
         "title": "Knives Out",
@@ -82,8 +77,7 @@ export const movies: Movie[] = [
         "country": "United States",
         "poster": "https://m.media-amazon.com/images/M/MV5BMGUwZjliMTAtNzAxZi00MWNiLWE2NzgtZGUxMGQxZjhhNDRiXkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_SX300.jpg",
         "imdbRating": "7.9",
-        "imdbID": "tt8946378",
-        "count": 1
+        "imdbID": "tt8946378"
     },
     {
         "title": "The Gentlemen",
@@ -96,22 +90,7 @@ export const movies: Movie[] = [
         "country": "United Kingdom, United States",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTlkMmVmYjktYTc2NC00ZGZjLWEyOWUtMjc2MDMwMjQwOTA5XkEyXkFqcGdeQXVyNTI4MzE4MDU@._V1_SX300.jpg",
         "imdbRating": "7.8",
-        "imdbID": "tt8367814",
-        "count": 1
-    },
-    {
-        "title": "Once Upon a Time in Hollywood",
-        "price": 1.77,
-        "year": "2019",
-        "genre": "Comedy, Drama",
-        "director": "Quentin Tarantino",
-        "actors": "Leonardo DiCaprio, Brad Pitt, Margot Robbie",
-        "plot": "A faded television actor and his stunt double strive to achieve fame and success in the final years of Hollywood's Golden Age in 1969 Los Angeles.",
-        "country": "United States, United Kingdom, China",
-        "poster": "https://m.media-amazon.com/images/M/MV5BOTg4ZTNkZmUtMzNlZi00YmFjLTk1MmUtNWQwNTM0YjcyNTNkXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_SX300.jpg",
-        "imdbRating": "7.6",
-        "imdbID": "tt7131622",
-        "count": 1
+        "imdbID": "tt8367814"
     },
     {
         "title": "Avengers: Endgame",
@@ -124,8 +103,7 @@ export const movies: Movie[] = [
         "country": "United States",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
         "imdbRating": "8.4",
-        "imdbID": "tt4154796",
-        "count": 1
+        "imdbID": "tt4154796"
     },
     {
         "title": "Inception",
@@ -138,38 +116,6 @@ export const movies: Movie[] = [
         "country": "United States, United Kingdom",
         "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
         "imdbRating": "8.8",
-        "imdbID": "tt1375666",
-        "count": 1
-    }
-]
-
-export const movies1: Movie[] = [
-    {
-        "title": "Parasite",
-        "price": 1.22,
-        "year": "2019",
-        "genre": "Drama, Thriller",
-        "director": "Bong Joon Ho",
-        "actors": "Song Kang-ho, Lee Sun-kyun, Cho Yeo-jeong",
-        "plot": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
-        "country": "South Korea",
-        "poster": "https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_SX300.jpg",
-        "imdbRating": "8.5",
-        "imdbID": "tt6751668",
-        "count": 1
-    },
-    {
-        "title": "Joker",
-        "price": 1.1,
-        "year": "2019",
-        "genre": "Crime, Drama, Thriller",
-        "director": "Todd Phillips",
-        "actors": "Joaquin Phoenix, Robert De Niro, Zazie Beetz",
-        "plot": "A mentally troubled stand-up comedian embarks on a downward spiral that leads to the creation of an iconic villain.",
-        "country": "United States, Canada",
-        "poster": "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
-        "imdbRating": "8.4",
-        "imdbID": "tt7286456",
-        "count": 1
+        "imdbID": "tt1375666"
     }
 ]

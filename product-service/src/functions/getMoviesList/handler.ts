@@ -1,8 +1,9 @@
 import { error500Response, formatJSONResponse } from '@libs/api-gateway';
 import { middyfy } from '@libs/lambda';
 import { getAllMoviesService } from '@products/productHandlers';
+import { APIGatewayProxyHandler } from 'aws-lambda';
 
-const getMoviesList = async () => {
+const getMoviesList: APIGatewayProxyHandler = async () => {
   try {
     const movies = await getAllMoviesService();
     return formatJSONResponse({ body: movies });

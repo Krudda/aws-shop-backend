@@ -1,6 +1,4 @@
 import type { AWS } from '@serverless/typescript';
-// import getMoviesList from '@functions/getMoviesList';
-// import getMovieById from '@functions/getMovieById';
 import { createProduct, getMoviesList, getMovieById } from '@functions/index';
 
 const serverlessConfiguration: AWS = {

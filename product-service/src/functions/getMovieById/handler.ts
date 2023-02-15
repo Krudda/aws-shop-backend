@@ -1,9 +1,9 @@
-import { APIGatewayProxyEvent, APIGatewayProxyResult } from "aws-lambda";
+import { APIGatewayProxyHandler } from "aws-lambda";
 import { error404Response, error500Response, formatJSONResponse } from '@libs/api-gateway';
 import { middyfy } from '@libs/lambda';
 import { getMovieService } from '@products/productHandlers';
 
-const getMovieById = async (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => {
+const getMovieById: APIGatewayProxyHandler = async (event) => {
   try {
     const { movieId = '' } = event.pathParameters;
     const movie = await getMovieService(movieId);

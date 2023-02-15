@@ -1,13 +1,17 @@
 import { error500Response, formatJSONResponse } from '@libs/api-gateway';
 import { middyfy } from '@libs/lambda';
-import { getAllMoviesService } from '@products/productHandlers';
-import { APIGatewayProxyResult } from 'aws-lambda';
+import { addMovieService } from '@products/productHandlers';
+import { APIGatewayProxyHandler } from 'aws-lambda';
 
-const createProduct = async (): Promise<APIGatewayProxyResult> => {
+const createProduct: APIGatewayProxyHandler = async (event) => {
+  const { body } = event;
+  console.log('body', body)
   try {
-    const movies = await getAllMoviesService();
-    return formatJSONResponse({ body: movies });
+    const res = await addMovieService(body);
+    console.log('res', res);
+    return formatJSONResponse({ body });
   } catch (error) {
+    console.log('error', error)
     return error500Response();
   }
 }

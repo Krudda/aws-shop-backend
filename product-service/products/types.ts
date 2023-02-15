@@ -9,6 +9,5 @@ export interface Movie {
     country: string,
     poster: string,
     imdbRating: string,
-    imdbID: string,
-    count: number
+    imdbID: string
 }

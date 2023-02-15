@@ -25,7 +25,7 @@ export const getMovieService = async (id: string) => {
     return Item;
 };
 
-export const addMovieService = async (movie: Movie) => {
+export const addMovieService = async (movie) => {
     try {
         const command = new PutCommand({
             TableName: PRODUCT_TABLE_NAME,
@@ -34,7 +34,7 @@ export const addMovieService = async (movie: Movie) => {
         const data = await ddbDocClient.send(command);
         return data;
     } catch (err) {
-        console.error(err);
+        throw new Error(err);
     }
 };
 
