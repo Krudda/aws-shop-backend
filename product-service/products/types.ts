@@ -1,4 +1,5 @@
 export interface Movie {
+    id?: string,
     title: string,
     price: number,
     year: string,
@@ -10,4 +11,9 @@ export interface Movie {
     poster: string,
     imdbRating: string,
     imdbID: string
+}
+
+export interface Stock {
+    product_id: string,
+    count: number
 }
