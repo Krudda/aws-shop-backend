@@ -10,6 +10,8 @@ import { PRODUCT_TABLE_NAME, STOCKS_TABLE_NAME } from "../../../../utils";
 const getMovieById: APIGatewayProxyHandler = async (event) => {
   const { movieId = '' } = event.pathParameters;
 
+  console.log('event', event);
+
   const getMovieService = async (movieId: string): Promise<Movie> => {
     const { Item } = await ddbDocClient.send(
       new GetCommand({

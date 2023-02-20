@@ -28,6 +28,8 @@ export const addMovieService = async (rawMovie) => {
 const createProduct: APIGatewayProxyHandler = async (event) => {
   const { body } = event;
 
+  console.log('body', body);
+
   try {
     await addMovieService(body);
     return formatJSONResponse({ body: "Movie added successfully" });
