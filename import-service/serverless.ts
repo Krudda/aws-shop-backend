@@ -1,5 +1,5 @@
 import type { AWS } from '@serverless/typescript';
-import { getProductsFile, importProductsFile } from '@functions/index';
+import { getProductsFile, importProductsFile, importFileParser } from '@functions/index';
 
 const serverlessConfiguration: AWS = {
   service: 'import-service',
@@ -26,13 +26,14 @@ const serverlessConfiguration: AWS = {
       {
         Effect: 'Allow',
         Action: 's3:*',
-        Resource: ['arn:aws:s3:::aws-krudda-first-app-upload/'],
+        Resource: ['arn:aws:s3:::aws-krudda-first-app-upload/*'],
       },
     ],
   },
   functions: {
     importProductsFile,
-    getProductsFile
+    getProductsFile,
+    importFileParser
   },
   package: { individually: true },
   custom: {
