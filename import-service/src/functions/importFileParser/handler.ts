@@ -6,7 +6,9 @@ import {
 } from '@aws-sdk/client-s3';
 import csv from 'csv-parser';
 import { s3Client } from "@libs/s3Client";
+import { sqsClient } from "@libs/sqsClient";
 import { PRODUCT_BUCKET_NAME } from "../../../../utils";
+import { SendMessageCommand } from '@aws-sdk/client-sqs';
 
 const importFileParser = async (event) => {
     try {
@@ -33,13 +35,8 @@ const importFileParser = async (event) => {
                 });
 
                 try {
-                    console.log("Start copying file");
                     await s3Client.send(copyCommand);
-                    console.log("Finish copying file");
-
-                    console.log("Start deleting file");
                     await s3Client.send(deleteCommand);
-                    console.log("Finish deleting file");
                 }
                 catch (err) {
                     console.log("Error during file transfer", err);
@@ -50,8 +47,16 @@ const importFileParser = async (event) => {
                 return new Promise<void>((resolve, reject) => {
                     stream
                         .pipe(csv())
-                        .on('data', (data) => {
-                            console.log('file data', data);
+                        .on('data', async (data) => {
+                            const sendMessageCommand = new SendMessageCommand({
+                                MessageBody: JSON.stringify(data),
+                                QueueUrl: process.env.SQS_URL,
+                            })
+                            try {
+                                await sqsClient.send(sendMessageCommand);
+                            } catch (err) {
+                                console.log("Error", err);
+                            }
                         })
                         .on('error', (err) => reject(err))
                         .on('end', async () => {
