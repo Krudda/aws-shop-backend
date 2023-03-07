@@ -1,4 +1,4 @@
-import { Movie } from './types';
+import { Movie, MovieType } from './types';
 
 export const movies: Movie[] = [
     {
@@ -12,7 +12,8 @@ export const movies: Movie[] = [
         "country": "South Korea",
         "poster": "https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_SX300.jpg",
         "imdbRating": "8.5",
-        "imdbID": "tt6751668"
+        "imdbID": "tt6751668",
+        "type": MovieType.MOVIE
     },
     {
         "title": "Joker",
@@ -25,7 +26,8 @@ export const movies: Movie[] = [
         "country": "United States, Canada",
         "poster": "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
         "imdbRating": "8.4",
-        "imdbID": "tt7286456"
+        "imdbID": "tt7286456",
+        "type": MovieType.MOVIE
     },
     {
         "title": "Money Heist",
@@ -38,7 +40,8 @@ export const movies: Movie[] = [
         "country": "Spain",
         "poster": "https://m.media-amazon.com/images/M/MV5BODI0ZTljYTMtODQ1NC00NmI0LTk1YWUtN2FlNDM1MDExMDlhXkEyXkFqcGdeQXVyMTM0NTUzNDIy._V1_SX300.jpg",
         "imdbRating": "8.2",
-        "imdbID": "tt6468322"
+        "imdbID": "tt6468322",
+        "type": MovieType.MOVIE
     },
     {
         "title": "The Platform",
@@ -51,7 +54,8 @@ export const movies: Movie[] = [
         "country": "Spain",
         "poster": "https://m.media-amazon.com/images/M/MV5BMzllNmRjYWItNjlhNS00MjcyLWIyODEtMTg0ZjBiNTNhNzQwXkEyXkFqcGdeQXVyMTAyOTE2ODg0._V1_SX300.jpg",
         "imdbRating": "7.0",
-        "imdbID": "tt8228288"
+        "imdbID": "tt8228288",
+        "type": MovieType.MOVIE
     },
     {
         "title": "1917",
@@ -64,7 +68,8 @@ export const movies: Movie[] = [
         "country": "United Kingdom, United States, India, Spain",
         "poster": "https://m.media-amazon.com/images/M/MV5BOTdmNTFjNDEtNzg0My00ZjkxLTg1ZDAtZTdkMDc2ZmFiNWQ1XkEyXkFqcGdeQXVyNTAzNzgwNTg@._V1_SX300.jpg",
         "imdbRating": "8.2",
-        "imdbID": "tt8579674"
+        "imdbID": "tt8579674",
+        "type": MovieType.MOVIE
     },
     {
         "title": "Knives Out",
@@ -77,7 +82,8 @@ export const movies: Movie[] = [
         "country": "United States",
         "poster": "https://m.media-amazon.com/images/M/MV5BMGUwZjliMTAtNzAxZi00MWNiLWE2NzgtZGUxMGQxZjhhNDRiXkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_SX300.jpg",
         "imdbRating": "7.9",
-        "imdbID": "tt8946378"
+        "imdbID": "tt8946378",
+        "type": MovieType.MOVIE
     },
     {
         "title": "The Gentlemen",
@@ -90,7 +96,8 @@ export const movies: Movie[] = [
         "country": "United Kingdom, United States",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTlkMmVmYjktYTc2NC00ZGZjLWEyOWUtMjc2MDMwMjQwOTA5XkEyXkFqcGdeQXVyNTI4MzE4MDU@._V1_SX300.jpg",
         "imdbRating": "7.8",
-        "imdbID": "tt8367814"
+        "imdbID": "tt8367814",
+        "type": MovieType.MOVIE
     },
     {
         "title": "Avengers: Endgame",
@@ -103,7 +110,8 @@ export const movies: Movie[] = [
         "country": "United States",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
         "imdbRating": "8.4",
-        "imdbID": "tt4154796"
+        "imdbID": "tt4154796",
+        "type": MovieType.MOVIE
     },
     {
         "title": "Inception",
@@ -116,6 +124,115 @@ export const movies: Movie[] = [
         "country": "United States, United Kingdom",
         "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
         "imdbRating": "8.8",
-        "imdbID": "tt1375666"
+        "imdbID": "tt1375666",
+        "type": MovieType.MOVIE
     }
+]
+
+export const moviesToAdd: Movie[] = [
+    {
+        "title": "The Simpsons Movie",
+        "price": 1.27,
+        "count": 1,
+        "year": "2007",
+        "genre": "Animation, Adventure, Comedy",
+        "director": "David Silverman",
+        "actors": "Dan Castellaneta, Julie Kavner, Nancy Cartwright",
+        "plot": "After Homer pollutes the town's water supply, Springfield is encased in a gigantic dome by the EPA and the Simpsons are declared fugitives.",
+        "country": "United States",
+        "poster": "https://m.media-amazon.com/images/M/MV5BMTgxMDczMTA5N15BMl5BanBnXkFtZTcwMzk1MzMzMw@@._V1_SX300.jpg",
+        "imdbRating": "7.3",
+        "imdbID": "tt0462538",
+        "type": MovieType.CARTOON
+    },
+    {
+        "title": "Wednesday",
+        "price": 2.44,
+        "count": 4,
+        "year": "2022-",
+        "genre": "Comedy, Crime, Fantasy",
+        "director": "N/A",
+        "actors": "Jenna Ortega, Hunter Doohan, Percy Hynes White",
+        "plot": "Follows Wednesday Addams' years as a student, when she attempts to master her emerging psychic ability, thwart a killing spree, and solve the mystery that embroiled her parents.",
+        "country": "United States",
+        "poster": "https://m.media-amazon.com/images/M/MV5BM2ZmMjEyZmYtOGM4YS00YTNhLWE3ZDMtNzQxM2RhNjBlODIyXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpg",
+        "imdbRating": "8.4",
+        "imdbID": "tt13443470",
+        "type": MovieType.MOVIE
+    },
+    {
+        "title": "Toy Story",
+        "price": 1.73,
+        "count": 3,
+        "year": "1995",
+        "genre": "Animation, Adventure, Comedy",
+        "director": "John Lasseter",
+        "actors": "Tom Hanks, Tim Allen, Don Rickles",
+        "plot": "A cowboy doll is profoundly threatened and jealous when a new spaceman action figure supplants him as top toy in a boy's bedroom.",
+        "country": "United States",
+        "poster": "https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_SX300.jpg",
+        "imdbRating": "8.3",
+        "imdbID": "tt0114709",
+        "type": MovieType.CARTOON
+    },
+    {
+        "title": "Mission: Impossible - Fallout",
+        "price": 2.00,
+        "count": 6,
+        "year": "2018",
+        "genre": "Action, Adventure, Thriller",
+        "director": "Christopher McQuarrie",
+        "actors": "Tom Cruise, Henry Cavill, Ving Rhames",
+        "plot": "Ethan Hunt and his IMF team, along with some familiar allies, race against time after a mission gone wrong.",
+        "country": "United States",
+        "poster": "https://m.media-amazon.com/images/M/MV5BNjRlZmM0ODktY2RjNS00ZDdjLWJhZGYtNDljNWZkMGM5MTg0XkEyXkFqcGdeQXVyNjAwMjI5MDk@._V1_SX300.jpg",
+        "imdbRating": "7.7",
+        "imdbID": "tt4912910",
+        "type": MovieType.MOVIE
+    },
+    {
+        "title": "Tom and Jerry Tales",
+        "price": 1.00,
+        "count": 4,
+        "year": "2006–2008",
+        "genre": "Animation, Comedy, Family",
+        "director": "N/A",
+        "actors": "Don Brown, Sam Vincent, Michael Donovan",
+        "plot": "Tom and Jerry return with vengeance in this new show.",
+        "country": "United States, Canada, United Kingdom, New Zealand, Australia, Ireland",
+        "poster": "https://m.media-amazon.com/images/M/MV5BNGQ5YjJjOWYtNWVlZS00YWIwLTlkMWItY2I5MjY5MWQxY2FjXkEyXkFqcGdeQXVyODk1MjAxNzQ@._V1_SX300.jpg",
+        "imdbRating": "7.3",
+        "imdbID": "tt0780438",
+        "type": MovieType.CARTOON
+    },
+    {
+        "title": "Doctor Strange in the Multiverse of Madness",
+        "price": 1.49,
+        "count": 7,
+        "year": "2022",
+        "genre": "Action, Adventure, Fantasy",
+        "director": "Sam Raimi",
+        "actors": "Benedict Cumberbatch, Elizabeth Olsen, Chiwetel Ejiofor",
+        "plot": "Doctor Strange teams up with a mysterious teenage girl from his dreams who can travel across multiverses, to battle multiple threats, including other-universe versions of himself, which threaten to wipe out millions across the mul...",
+        "country": "United States",
+        "poster": "https://m.media-amazon.com/images/M/MV5BNWM0ZGJlMzMtZmYwMi00NzI3LTgzMzMtNjMzNjliNDRmZmFlXkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_SX300.jpg",
+        "imdbRating": "6.9",
+        "imdbID": "tt9419884",
+        "type": MovieType.MOVIE
+    },
+    {
+        "title": "Toy Story That Time Forgot",
+        "price": 1.44,
+        "count": 5,
+        "year": "2014",
+        "genre": "Animation, Adventure, Comedy",
+        "director": "Steve Purcell",
+        "actors": "Tom Hanks, Tim Allen, Kristen Schaal",
+        "plot": "It's a post-Christmas play-date and the toys have to go up against the fearsome and aggressive new dino toys.",
+        "country": "United States",
+        "poster": "https://m.media-amazon.com/images/M/MV5BOTc2OTA1MDM4M15BMl5BanBnXkFtZTgwNjczMDk5MjE@._V1_SX300.jpg",
+        "imdbRating": "7.1",
+        "imdbID": "tt3473654",
+        "type": MovieType.CARTOON
+    },
 ]
